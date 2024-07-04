@@ -22,7 +22,7 @@ Clicking the **Skip Button** does make the dialog go away; however, it does lead
 
 ```
    {
-        "id":  "53e584eb-4352-4fb0-924f-c66f529097c0",
+        "id":  "<deployment pipeline id guid>",
         "displayName":  "timmacpipelinetest",
         "stages":  [
                        {
