@@ -1,5 +1,5 @@
 # OVERVIEW
-Recently, I was asked about why the **Admin - Pipelines GetPipelinesAsAdmin REST API** was not returning Power BI Workspace Information.  Puzzling, I reviewed the output of the API and noticed the issue.  But then the question is how did we get into this state?  I walked through the creation process of a Deployment Pipepline and discovered that if the process is not completed, you can end up in this state, which is essentially an orphaned deployment pipeline.  Review the **Response to the above powershell code** section for what the output looks like for an orphaned pipeline based on no workspace information.  The reason that it is orphaned, is that from the GUI perspective, one would not see it and thus would end up creating a new deployment pipeline for that Power BI Workspace. 
+Recently, I was asked about why the **[Pipelines - Get Pipeline Stages](https://learn.microsoft.com/en-us/rest/api/power-bi/pipelines/get-pipeline-stages)** and the **[Admin - Pipelines GetPipelinesAsAdmin](https://learn.microsoft.com/en-us/rest/api/power-bi/admin/pipelines-get-pipelines-as-admin)** was not returning Power BI Workspace Information.  Puzzling, I reviewed the output of the API and noticed the issue.  But then the question is how did we get into this state?  I walked through the creation process of a Deployment Pipepline and discovered that if the process is not completed, you can end up in this state, which is essentially an orphaned deployment pipeline.  Review the **[Response to the above powershell code](https://github.com/msfttimmac/MyPowerBIBlog/edit/master/Deployment%20Pipelines/Orphaned%20Pipelines.md#response-to-the-above-powershell-code)** section for what the output looks like for an orphaned pipeline based on no workspace information.  The reason that it is orphaned, is that from the GUI perspective, one would not see it and thus would end up creating a new deployment pipeline for that Power BI Workspace. 
 
 # DIALOGS TO PAY ATTENTION TOO
 If you click the **Skip Button** on the Assign your workspace to a stage screen it will close the *Assign your workspace to a stage* dialog; however, you will now see another page that allows you to enter the information for the pipeline. 
@@ -53,5 +53,6 @@ The results were discovered during a Power BI Service inventory.  Becoming very 
 
 # RESOURCES / API DOCUMENTATION
 1. [Admin - Pipelines GetPipelinesAsAdmin](https://learn.microsoft.com/en-us/rest/api/power-bi/admin/pipelines-get-pipelines-as-admin)
-2. [Pipelines - Assign Workspace Rest API](https://learn.microsoft.com/en-us/rest/api/power-bi/pipelines/assign-workspace)
+2. [Pipelines - Get Pipeline Stages](https://learn.microsoft.com/en-us/rest/api/power-bi/pipelines/get-pipeline-stages)
+3. [Pipelines - Assign Workspace Rest API](https://learn.microsoft.com/en-us/rest/api/power-bi/pipelines/assign-workspace)
 
