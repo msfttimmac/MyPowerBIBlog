@@ -51,6 +51,13 @@ Yes.  There are limitations around the ability to do this; however, as long as t
 ### How was this discovered?
 The results were discovered during a Power BI Service inventory.  Becoming very granular with the inventory and understanding each piece, this issue was discovered.  This is an orphaned pipeline.  
 
+### How to find my orphaned and existing pipelines?
+1. In the Power BI Service, click on Workspaces on the left hand side
+2. At the bottom, directly above **Create a Workspace** is **Deployment Pipelines**
+3. Click on Deployment Pipelines
+   ![image](https://github.com/msfttimmac/MyPowerBIBlog/assets/50430004/18239675-33a4-48cc-9c6c-c2dc108ec553)
+4. This will show you all of your Deployment Pipelines.
+
 # RESOURCES / API DOCUMENTATION
 1. [Admin - Pipelines GetPipelinesAsAdmin](https://learn.microsoft.com/en-us/rest/api/power-bi/admin/pipelines-get-pipelines-as-admin)
 2. [Pipelines - Get Pipeline Stages](https://learn.microsoft.com/en-us/rest/api/power-bi/pipelines/get-pipeline-stages)
